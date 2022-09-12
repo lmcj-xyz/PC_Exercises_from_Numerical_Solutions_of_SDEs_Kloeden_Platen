@@ -13,3 +13,4 @@ Here is the list of exercises.
 ### Chapter 1: Probability and Statistics
 
 - [ ] PC-Exercise 1.3.1
+- [X] PC-Exercise 1.4.4
