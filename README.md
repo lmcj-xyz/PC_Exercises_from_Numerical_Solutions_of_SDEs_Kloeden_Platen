@@ -6,7 +6,7 @@ Bear in mind that I am mostly interested in the exercises from **Part IV: Time D
 
 Also, since most of things in probability require many repetitions to be representative, and therefore we need arrays of potentially many dimensions, the code here will be done using *NumPy* and *SciPy* to handle arrays and perform operations over them.
 
-For visualization it will be used *Matplotlib*.
+For visualization I will be using *Matplotlib*.
 
 Wish me luck.
 
