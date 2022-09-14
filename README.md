@@ -23,8 +23,8 @@ Here is the list of exercises.
 *2/22 solved*
 
 - [ ] PC-Exercise 1.3.1
-- [X] PC-Exercise 1.4.4
-- [X] PC-Exercise 1.4.5
+- [X] PC-Exercise 1.4.4 -> `pce144.py`
+- [X] PC-Exercise 1.4.5 -> `pce145.py`
 - [ ] PC-Exercise 1.4.6
 - [ ] PC-Exercise 1.4.10
 - [ ] PC-Exercise 1.4.12
@@ -82,7 +82,7 @@ Here is the list of exercises.
 
 *1/11 solved*
 
-- [X] PC-Exercise 8.1.1
+- [X] PC-Exercise 8.1.1 -> `pce811.py`
 - [ ] PC-Exercise 8.1.2
 - [ ] PC-Exercise 8.1.3
 - [ ] PC-Exercise 8.1.5
