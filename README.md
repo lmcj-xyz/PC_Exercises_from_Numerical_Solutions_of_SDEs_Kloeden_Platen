@@ -23,6 +23,8 @@ Here is the list of exercises.
 - [X] PC-Exercise 1.4.5
 - [ ] PC-Exercise 1.4.6
 
+## Part IV: Time Discrete Approximations
+
 ### Chapter 8: Deterministic Differential Equations
 
 - [X] PC-Exercise 8.1.1
