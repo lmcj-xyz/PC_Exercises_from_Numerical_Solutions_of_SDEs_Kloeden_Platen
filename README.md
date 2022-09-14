@@ -1,6 +1,6 @@
 # PC Exercises from Numerical Solution of Stochastic Differential Equations, by Kloeden and Platen
 
-This is my attempt to, in the *veeeeeeery* long term, solve all the PC Exercises in the fantastic monograph by Kloeden and Platen using *Python*.
+This is my attempt to solve all the PC Exercises in the fantastic monograph by Kloeden and Platen using *Python*.
 
 I try to keep each problem as self contained as possible, so that it is not necessary to go and check other pieces of code if one is interested in one particular problem.
 
