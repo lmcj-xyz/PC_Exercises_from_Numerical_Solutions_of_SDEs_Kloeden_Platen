@@ -6,15 +6,11 @@ I try to keep each problem as self contained as possible, so that it is not nece
 
 Bear in mind that I am mostly interested in the exercises from **Part IV: Time Discrete Approximations** and **Part V: Strong Approximations**, so I might not necessarily go in the order of the book, but I will try.
 
-Also, since most of things in probability require many repetitions to be representative, and therefore we need arrays of potentially many dimensions, the code here will be done using *NumPy* and *SciPy* to handle arrays and perform operations over them.
-
-For visualization I will be using *Matplotlib*.
-
 Wish me luck.
 
 Here is the list of exercises.
 
-*3/115 solved*
+*4/115 solved*
 
 ## Part I. Preliminaries
 
@@ -80,10 +76,10 @@ Here is the list of exercises.
 
 ### Chapter 8. Deterministic Differential Equations 
 
-*1/11 solved*
+*2/11 solved*
 
 - [X] PC-Exercise 8.1.1 -> `pce811.py`
-- [ ] PC-Exercise 8.1.2 -> `pce812.py`
+- [X] PC-Exercise 8.1.2 -> `pce812.py`
 - [ ] PC-Exercise 8.1.3
 - [ ] PC-Exercise 8.1.5
 - [ ] PC-Exercise 8.1.7

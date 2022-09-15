@@ -15,7 +15,12 @@ using NumPy.
 from math import exp
 import matplotlib.pyplot as plt
 
-xt1 = exp(-5*(1)) # Real value at t = 1
+# The exercise asks to truncate to observe the round off error
+# You have to truncate every time otherwise Python will compute things
+# very preciselly and we do not want that for this exercise
+truncate = lambda w: round(w, ndigits=5) # Truncate function for concise coding
+
+xt1 = truncate(exp(-5*(1))) # Real value at t = 1
 y0 = 1 # Initial condition
 error = [] # List to store error at different time steps
 dt = [] # List to store time steps
@@ -23,13 +28,13 @@ dt = [] # List to store time steps
 for i in range(14): # Loop over the number of time steps
     y = y0
     for j in range(2**i): # Loop over time
-        y += -5*y*(1/2**i)
+        y += truncate(-5*y*(1/2**i))
     # Using only 5 decimal places and taking absolute value for the loglog plot
-    error.append(round(abs(xt1 - y), ndigits=5))
+    error.append(truncate(abs(xt1 - y)))
     dt.append(1/2**i)
 
 # You might want to uncomment the line below if you want to see the error
-#print(error)
+print(error)
 
 plt.figure()
 plt.title(label="Global discretization error at $t=1$")
