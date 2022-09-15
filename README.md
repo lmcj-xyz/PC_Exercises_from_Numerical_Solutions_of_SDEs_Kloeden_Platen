@@ -83,7 +83,7 @@ Here is the list of exercises.
 *1/11 solved*
 
 - [X] PC-Exercise 8.1.1 -> `pce811.py`
-- [ ] PC-Exercise 8.1.2
+- [X] PC-Exercise 8.1.2 -> `pce812.py`
 - [ ] PC-Exercise 8.1.3
 - [ ] PC-Exercise 8.1.5
 - [ ] PC-Exercise 8.1.7
