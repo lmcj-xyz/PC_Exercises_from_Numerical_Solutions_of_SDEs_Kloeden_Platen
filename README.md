@@ -1,6 +1,8 @@
 # PC Exercises from the book "Numerical Solution of Stochastic Differential Equations" by Kloeden and Platen
 
-This is my attempt to solve all the PC Exercises in the fantastic monograph by Kloeden and Platen using *Python*.
+This is my attempt to solve all the PC Exercises in the fantastic monograph by Kloeden and Platen.
+
+I will be using *Python*. Perhaps *C/C++* are better to learn numerical methods since you have to create many things from scratch, but it is also nice to take advantage of the nice management of multidimensional arrays with *NumPy* in fields like probability.
 
 I try to keep each problem as self contained as possible, so that it is not necessary to go and check other pieces of code if one is interested in one particular problem.
 
