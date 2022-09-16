@@ -37,6 +37,7 @@ for i in range(14): # Loop over the number of time steps
 # You might want to uncomment the line below if you want to see the error
 #print(error)
 
+# Linear regression to compute the slope
 x = np.log2(dt)
 y = np.log2(error)
 A = np.vstack([x, np.ones(len(x))]).T
