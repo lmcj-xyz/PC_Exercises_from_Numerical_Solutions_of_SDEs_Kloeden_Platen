@@ -12,18 +12,18 @@ Wish me luck.
 
 Here is the list of exercises.
 
-*4/115 solved*
+*5/115 solved*
 
 ## Part I. Preliminaries
 
 ### Chapter 1. Probability and Statistics
 
-*2/22 solved*
+*3/22 solved*
 
 - [ ] PC-Exercise 1.3.1
 - [X] PC-Exercise 1.4.4 -> `pce144.py`
 - [X] PC-Exercise 1.4.5 -> `pce145.py`
-- [ ] PC-Exercise 1.4.6
+- [X] PC-Exercise 1.4.6 -> `pce146.py`
 - [ ] PC-Exercise 1.4.10
 - [ ] PC-Exercise 1.4.12
 - [ ] PC-Exercise 1.4.13
