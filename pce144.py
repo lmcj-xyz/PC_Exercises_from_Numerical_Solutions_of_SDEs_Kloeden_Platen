@@ -16,11 +16,9 @@ n = 10**4 # Size of the sample
 bins = int(5*10e2) # Bins to create the histogram
 
 unif = rng.uniform(low=0.0, high=1.0, size=n) # Sample of points ~ U(0,1)
+# Statistics to verify distribution
 unif_mean = mean(a=unif) # Sample average
 unif_var = var(a=unif) # Sample variance
-
-print("Sample average: ", unif_mean)
-print("Sample variance: ", unif_var)
 
 plt.figure()
 plt.hist(x=unif, bins=bins, density=True)

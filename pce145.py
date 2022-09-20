@@ -17,11 +17,9 @@ bins = int(5*10e2) # Bins for the histogram
 lamb = 2 # Parameter lambda
 
 expon = rng.exponential(scale=1/lamb, size=n) # Sample of points ~ Exp(lambda)
+# Statistics to explore distribution
 expon_mean = mean(a=expon) # Sample average
 expon_var = var(a=expon) # Sample variance
-
-print("Sample average: ", expon_mean)
-print("Sample variance: ", expon_var)
 
 plt.figure()
 # The parameter range below fulfills the requirement of the exercise
