@@ -28,8 +28,9 @@ dt = np.zeros(14) # List to store time steps
 
 for i in range(14): # Loop over the number of time steps
     y = y0
+    delta = 1/2**i
     for j in range(2**i): # Loop over time
-        y += truncate(-5*y*(1/2**i))
+        y += truncate(-5*y*delta)
     # Using only 5 decimal places and taking absolute value for the loglog plot
     error[i] = truncate(abs(xt1 - y))
     dt[i] = 1/2**i
