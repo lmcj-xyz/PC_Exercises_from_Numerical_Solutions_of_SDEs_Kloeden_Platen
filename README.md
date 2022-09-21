@@ -82,7 +82,7 @@ Here is the list of exercises.
 
 - [X] PC-Exercise 8.1.1 -> `pce811.py`
 - [X] PC-Exercise 8.1.2 -> `pce812.py`
-- [ ] PC-Exercise 8.1.3 -> `pce813.py`
+- [X] PC-Exercise 8.1.3 -> `pce813.py`
 - [ ] PC-Exercise 8.1.5
 - [ ] PC-Exercise 8.1.7
 - [ ] PC-Exercise 8.2.1
