@@ -78,7 +78,7 @@ Here is the list of exercises.
 
 ### Chapter 8. Deterministic Differential Equations 
 
-*2/11 solved*
+*3/11 solved*
 
 - [X] PC-Exercise 8.1.1 -> `pce811.py`
 - [X] PC-Exercise 8.1.2 -> `pce812.py`
