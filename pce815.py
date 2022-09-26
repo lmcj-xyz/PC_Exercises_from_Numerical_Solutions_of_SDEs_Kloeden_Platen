@@ -25,11 +25,16 @@ for i in range(14): # Loop over the number of time steps
         # Heun method
         y[j+1] += 0.5*(-5*y[j] - 5*(y[j] - 5*y[j]*delta))*delta
     print(y)
-    for j in range(3, 2**i):
-        print(j)
-        y[j+1] += (1/12)*(-23*5*y[j] + 16*5*y[j-1] - 5*5*y[j-2])*delta
-    error[i] = abs(xt1 - y[-1])
-    dt[i] = 1/2**i
+    if j > 1:
+        for j in range(3, 2**i):
+            print(j)
+            #y[j+1] += (1/12)*(-23*5*y[j] + 16*5*y[j-1] - 5*5*y[j-2])*delta
+            y.append(y[j] + (1/12)*(-23*5*y[j] + 16*5*y[j-1] - 5*5*y[j-2])*delta)
+        error[i] = abs(xt1 - y[-1])
+        dt[i] = 1/2**i
+    else:
+        error[i] = abs(xt1 - y[-1])
+        dt[i] = 1/2**i
 
 # You might want to uncomment the line below if you want to see the error
 #print(error)
