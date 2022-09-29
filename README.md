@@ -2,7 +2,7 @@
 
 This is my attempt to solve all the PC Exercises in the fantastic monograph by Kloeden and Platen.
 
-I will be using *Fortran*. The few *Python* things are in the `./archive/` directory.
+I will be using *Fortran*.
 
 I try to keep each problem as self contained as possible, so that it is not necessary to go and check other pieces of code if one is interested in one particular problem.
 
