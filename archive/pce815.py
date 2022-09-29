@@ -20,12 +20,12 @@ dt = np.zeros(14) # List to store time steps
 for i in range(14): # Loop over the number of time steps
     y[0] = y0
     delta = 1/2**i
-    for j in range(2): # Loop over time for the first three elements
+    for j in range(3): # Loop over time for the first three elements
         print(j)
         # Heun method
         y[j+1] += 0.5*(-5*y[j] - 5*(y[j] - 5*y[j]*delta))*delta
     print(y)
-    if j > 1:
+    if j > 2:
         for j in range(3, 2**i):
             print(j)
             #y[j+1] += (1/12)*(-23*5*y[j] + 16*5*y[j-1] - 5*5*y[j-2])*delta

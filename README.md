@@ -2,28 +2,26 @@
 
 This is my attempt to solve all the PC Exercises in the fantastic monograph by Kloeden and Platen.
 
-I will be using *Python*. Perhaps *C/C++* are better to learn numerical methods since you have to create many things from scratch, but it is also nice to take advantage of the nice management of multidimensional arrays with *NumPy* in fields like probability.
+I will be using *Fortran*. The few *Python* things are in the `./archive/` directory.
 
 I try to keep each problem as self contained as possible, so that it is not necessary to go and check other pieces of code if one is interested in one particular problem.
-
-Bear in mind that I am mostly interested in the exercises from **Part IV: Time Discrete Approximations** and **Part V: Strong Approximations**, so I might not necessarily go in the order of the book, but I will try.
 
 Wish me luck.
 
 Here is the list of exercises.
 
-*5/115 solved*
+*0/115 solved*
 
 ## Part I. Preliminaries
 
 ### Chapter 1. Probability and Statistics
 
-*3/22 solved*
+*0/22 solved*
 
 - [ ] PC-Exercise 1.3.1
-- [X] PC-Exercise 1.4.4 -> `pce144.py`
-- [X] PC-Exercise 1.4.5 -> `pce145.py`
-- [X] PC-Exercise 1.4.6 -> `pce146.py`
+- [ ] PC-Exercise 1.4.4
+- [ ] PC-Exercise 1.4.5
+- [ ] PC-Exercise 1.4.6
 - [ ] PC-Exercise 1.4.10
 - [ ] PC-Exercise 1.4.12
 - [ ] PC-Exercise 1.4.13
@@ -80,9 +78,9 @@ Here is the list of exercises.
 
 *3/11 solved*
 
-- [X] PC-Exercise 8.1.1 -> `pce811.py`
-- [X] PC-Exercise 8.1.2 -> `pce812.py`
-- [X] PC-Exercise 8.1.3 -> `pce813.py`
+- [ ] PC-Exercise 8.1.1
+- [ ] PC-Exercise 8.1.2
+- [ ] PC-Exercise 8.1.3
 - [ ] PC-Exercise 8.1.5
 - [ ] PC-Exercise 8.1.7
 - [ ] PC-Exercise 8.2.1
