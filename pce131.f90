@@ -1,7 +1,7 @@
 program pce131
   implicit none
 
-  real :: pi
+  real(10), parameter :: PI = 4*atan(1.d0) ! Definition of PI
 
   real :: unif_exp_invtr(10**2) ! Uniform RV for exponential distribution with inverse transform
   real :: unif_gauss_bm1(10**2) ! Uniform RV for Gaussian with Box-Muller
@@ -32,7 +32,7 @@ program pce131
   exp_dist = -log(unif_exp_invtr)/lambda
 
   ! Gaussian random numbers Box-Muller
-  gauss_bm = sqrt(-2*log(unif_gauss_bm1))*cos(2*pi*unif_gauss_bm2)
+  gauss_bm = sqrt(-2*log(unif_gauss_bm1))*cos(2*PI*unif_gauss_bm2)
 
   ! Gaussian random numbers Polar Marsaglia
 
