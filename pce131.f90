@@ -65,11 +65,11 @@ program pce131
   do while (k <= POINTS)
     call random_number(unif_gauss_pm1)
     call random_number(unif_gauss_pm2)
-    vunif_gauss_pm1 = 2*unif_gauss_pm1 - 1
+    vunif_gauss_pm1 = 2*unif_gauss_pm1 - 1 ! Helper uniform RVs
     vunif_gauss_pm2 = 2*unif_gauss_pm2 - 1
     wunif_gauss_pm = vunif_gauss_pm1**2 + vunif_gauss_pm2**2
-    if (wunif_gauss_pm <= 1) then
-      gauss_pm(k) = wunif_gauss_pm
+    if (wunif_gauss_pm <= 1) then ! Condition for the generation
+      gauss_pm(k) = vunif_gauss_pm1*sqrt(-2*log(wunif_gauss_pm)/wunif_gauss_pm)
       k = k + 1
     end if
   end do
