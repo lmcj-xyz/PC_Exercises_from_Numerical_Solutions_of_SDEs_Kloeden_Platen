@@ -16,7 +16,7 @@ program pce144
   real, parameter :: UP = 1
   real, parameter :: DELTA_X = 5.0/10**2
   integer, parameter :: BINS = int((UP - DOWN)/DELTA_X)
-  character(len=*), parameter :: OUT_FILE = 'pce144.dat'
+  character(len=*), parameter :: OUT_FILE = 'pce1404.dat'
 
   real :: uniform(POINTS)
   integer :: histogram(BINS)
@@ -43,8 +43,7 @@ program pce144
   ! Create file with the binned data
   open(action='write', file=OUT_FILE, newunit=fu, status='replace')
     do k = 1, BINS
-      sub_up = k*DELTA_X
-      write(fu, *) sub_up, histogram(k)
+      write(fu, *) histogram(k)
     end do
   close(fu)
 end program pce144

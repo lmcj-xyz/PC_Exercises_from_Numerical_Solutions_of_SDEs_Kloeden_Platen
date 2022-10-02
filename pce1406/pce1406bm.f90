@@ -3,12 +3,12 @@
 ! gnufortran and gnuplot installed follow the instructions:
 ! - Navigate to the containing directory
 ! - Compile program:
-!       gfortran pce146bm.f90 -o pce146bm.o
+!       gfortran pce1406bm.f90 -o pce1406bm.o
 ! - Run the executable:
-!       ./pce146bm.o
+!       ./pce1406bm.o
 ! - Plot the generated file
-!       gnuplot -p pce146bm.dat
-program pce146bm
+!       gnuplot -p pce1406bm.dat
+program pce1406bm
   implicit none
 
   real(10), parameter :: PI = 4*atan(1.d0) ! Definition of PI
@@ -17,7 +17,7 @@ program pce146bm
   real, parameter :: UP = 2.5
   integer, parameter :: BINS = 10**2
   real, parameter :: DELTA_X = (UP - DOWN)/BINS
-  character(len=*), parameter :: OUT_FILE = 'pce146bm.dat'
+  character(len=*), parameter :: OUT_FILE = 'pce1406bm.dat'
 
   real :: uniform1(POINTS)
   real :: uniform2(POINTS)
@@ -47,13 +47,8 @@ program pce146bm
 
   ! Create file with the binned data
   open(action='write', file=OUT_FILE, newunit=fu, status='replace')
-    do k = 1, BINS/2
-      sub_up = -k*DELTA_X
-      write(fu, *) sub_up, histogram(k)
-    end do
-    do k = 1, BINS/2
-      sub_up = k*DELTA_X
-      write(fu, *) sub_up, histogram(k)
+    do k = 1, BINS
+      write(fu, *) histogram(k)
     end do
   close(fu)
-end program pce146bm
+end program pce1406bm
