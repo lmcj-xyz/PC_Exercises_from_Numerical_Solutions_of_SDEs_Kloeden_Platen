@@ -40,7 +40,7 @@ program pce131
   p1 = 0.3
   x1 = 1
   x2 = 0
-  do while (j <= POINTS)
+  do j = 1,  POINTS
     if (0 <= unif_two_point(j) .and. unif_two_point(j) <= p1) then
       two_point(j) = x1
     else if (p1 <= unif_two_point(j) .and. unif_two_point(j) <= 1) then
