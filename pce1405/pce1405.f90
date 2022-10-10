@@ -15,7 +15,7 @@ program pce1405
   integer, parameter :: POINTS = 10**4
   real, parameter :: DOWN = 0
   real, parameter :: UP = 2
-  real, parameter :: DELTA_X = 5.0/10**2
+  !real, parameter :: DELTA_X = 5.0/10**2
   real, parameter :: LAMBDA = 2
   integer, parameter :: BINS = int((UP - DOWN)/DELTA_X)
   character(len=*), parameter :: OUT_FILE = 'pce1405.dat'
@@ -31,23 +31,6 @@ program pce1405
   !call random_number(uniform)
   call exponential(exponential_array, LAMBDA)
 
-  ! Count points in each interval i.e. bin your data
-  do i = 1, BINS
-    sub_up = i*DELTA_X
-    sub_down = sub_up - DELTA_X
-    bin_count = 0
-    do j = 1, POINTS
-      if (sub_down <= exponential_array(j) .and. exponential_array(j) <= sub_up) then
-        bin_count = bin_count + 1
-      end if
-    end do
-    histogram(i) = bin_count
-  end do
+  call histogram(exponential_array, DOWN, UP, BINS, OUT_FILE)
 
-  ! Create file with the binned data
-  open(action='write', file=OUT_FILE, newunit=fu, status='replace')
-    do k = 1, BINS
-      write(fu, *) histogram(k)
-    end do
-  close(fu)
 end program pce1405
