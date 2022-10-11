@@ -26,8 +26,8 @@ contains
   subroutine normal_bm(bm_array)
     implicit none
     real, intent(inout) :: bm_array(:)
-    real :: uniform_1
-    real :: uniform_2
+    real :: uniform_1, uniform_2
+    integer :: i
     real(10), parameter :: PI = 4*atan(1.d0) ! Definition of PI
 
     call random_seed()
@@ -35,6 +35,7 @@ contains
       call random_number(uniform_1)
       call random_number(uniform_2)
       bm_array(i) = sqrt(-2*log(uniform_1))*cos(2*PI*uniform_2)
+    end do
   end subroutine normal_bm
 
   ! Gaussian Polar Marsaglia

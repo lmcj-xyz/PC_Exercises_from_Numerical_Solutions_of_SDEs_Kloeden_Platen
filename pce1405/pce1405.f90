@@ -10,7 +10,7 @@
 !       gnuplot -p pce145.dat
 program pce1405
   use random_numbers
-  use histogram
+  !use histogram
   implicit none
 
   integer, parameter :: POINTS = 10**4
@@ -23,7 +23,7 @@ program pce1405
 
   !real :: uniform(POINTS)
   real :: exponential_array(POINTS)
-  !integer :: histogram(BINS)
+  integer :: histogram(BINS)
 
   integer :: i, j, k, fu, bin_count
   real :: sub_up, sub_down
@@ -31,6 +31,24 @@ program pce1405
   !call random_seed()
   !call random_number(uniform)
   call exponential(exponential_array, LAMBDA)
-  call hist(exponential_array, DOWN, UP, BINS, OUT_FILE)
 
+  ! Count points in each interval i.e. bin your data
+  do i = 1, BINS
+    sub_up = i*DELTA_X
+    sub_down = sub_up - DELTA_X
+    bin_count = 0
+    do j = 1, POINTS
+      if (sub_down <= exponential_array(j) .and. exponential_array(j) <= sub_up) then
+        bin_count = bin_count + 1
+      end if
+    end do
+    histogram(i) = bin_count
+  end do
+
+  ! Create file with the binned data
+  open(action='write', file=OUT_FILE, newunit=fu, status='replace')
+    do k = 1, BINS
+      write(fu, *) histogram(k)
+    end do
+  close(fu)
 end program pce1405
