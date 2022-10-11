@@ -1,6 +1,6 @@
 module random_numbers
   ! Functions and subroutines to generate random numbers with different distributions
-
+  private
   !public n
   !
   !integer :: n
@@ -9,7 +9,7 @@ contains
   ! Generation of exponentially distributed numbers
   subroutine exponential(exponential_array, lambda)
     implicit none
-    real :: exponential_array(:) ! Exponential
+    real, intent(inout) :: exponential_array(:) ! Exponential
     real, intent(in) :: lambda ! Lambda parameter, hast to be lambda>0
 
     real :: uniform
@@ -22,10 +22,24 @@ contains
     end do
   end subroutine exponential
 
-  !! Constants
-  !real(10), parameter :: PI = 4*atan(1.d0) ! Definition of PI
-  !integer, parameter :: POINTS = 10**2 ! Number of points to generate
+  ! Gaussian by Box-Muller
+  subroutine normal_bm(bm_array)
+    implicit none
+    real, intent(inout) :: bm_array(:)
+    real :: uniform_1
+    real :: uniform_2
+    real(10), parameter :: PI = 4*atan(1.d0) ! Definition of PI
 
+    call random_seed()
+    do i = 1, size(bm_array)
+      call random_number(uniform_1)
+      call random_number(uniform_2)
+      bm_array(i) = sqrt(-2*log(uniform_1))*cos(2*PI*uniform_2)
+  end subroutine normal_bm
+
+  ! Gaussian Polar Marsaglia
+
+  !integer, parameter :: POINTS = 10**2 ! Number of points to generate
   !! Variables for two-point RV
   !real :: unif_two_point(POINTS) ! Uniform
   !real :: two_point(POINTS) ! Two-point
