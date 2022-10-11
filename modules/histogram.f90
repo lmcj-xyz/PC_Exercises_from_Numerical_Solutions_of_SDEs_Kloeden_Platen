@@ -1,19 +1,22 @@
 ! Bin data to create a histogram and returns a file ready to plot
 module histogram
 contains
-  subroutine histogram(dat, x_start, x_end, bins, hist_file)
+  subroutine hist(dat, x_start, x_end, bins, hist_file)
     real, intent(in) :: dat(:)
     real, intent(in) :: x_start
     real, intent(in) :: x_end
     integer, intent(in) :: bins
-    character(len=*), intent(inout) :: hist_file
+    character(len=*), intent(in) :: hist_file
 
     integer :: i, j, k, fu, bin_count
     real :: sub_up, sub_down
 
-    real, intent(in), parameter :: dx = (x_start - x_end)/bins
-    real, intent(in), parameter :: points = size(dat)
+    real :: dx
+    integer :: points
     integer :: hist_array(bins)
+
+    dx = (x_start - x_end)/bins
+    points = size(dat)
 
     ! Count points in each interval i.e. bin your data
     do i = 1, bins
@@ -34,4 +37,5 @@ contains
         write(fu, *) hist_array(k)
       end do
     close(fu)
+  end subroutine hist
 end module histogram
