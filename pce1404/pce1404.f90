@@ -9,7 +9,6 @@
 ! - Plot the generated file
 !       gnuplot -p pce144.dat
 program pce144
-  use random_numbers
   implicit none
 
   integer, parameter :: POINTS = 10**4
