@@ -18,10 +18,10 @@ Here is the list of exercises.
 
 *0/22 solved*
 
-- [X] PC-Exercise 1.3.1 `-> ./pce131/`
-- [X] PC-Exercise 1.4.4 `-> ./pce1404/`
-- [X] PC-Exercise 1.4.5 `-> ./pce1405/`
-- [X] PC-Exercise 1.4.6 `-> ./pce1406bm/` for Box-Muller method, and `-> ./pce1406pm/` for Polar Marsaglia method
+- [X] PC-Exercise 1.3.1  `-> ./pce131/`
+- [X] PC-Exercise 1.4.4  `-> ./pce1404/`
+- [X] PC-Exercise 1.4.5  `-> ./pce1405/`
+- [X] PC-Exercise 1.4.6  `-> ./pce1406bm/` for Box-Muller method, and `-> ./pce1406pm/` for Polar Marsaglia method
 - [X] PC-Exercise 1.4.10 `-> ./pce1410/`
 - [ ] PC-Exercise 1.4.12
 - [ ] PC-Exercise 1.4.13
