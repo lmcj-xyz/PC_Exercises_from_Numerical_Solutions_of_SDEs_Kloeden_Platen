@@ -22,7 +22,7 @@ Here is the list of exercises.
 - [X] PC-Exercise 1.4.4 `-> ./pce1404/`
 - [X] PC-Exercise 1.4.5 `-> ./pce1405/`
 - [X] PC-Exercise 1.4.6 `-> ./pce1406bm/` for Box-Muller method, and `-> ./pce1406pm/` for Polar Marsaglia method
-- [ ] PC-Exercise 1.4.10
+- [X] PC-Exercise 1.4.10 `-> ./pce1410/`
 - [ ] PC-Exercise 1.4.12
 - [ ] PC-Exercise 1.4.13
 - [ ] PC-Exercise 1.5.3
